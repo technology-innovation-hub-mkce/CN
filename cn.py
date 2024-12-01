@@ -280,7 +280,7 @@ import java.nio.file.*;
 import java.util.*;
 
 public class ImageServer {
-    private static final int PORT = 4444;
+    private static final int PORT = 6666;
     private static final String UPLOAD_DIR = "uploads/";
 
     public static void main(String[] args) throws IOException {
@@ -441,7 +441,7 @@ public class ImageServer {
 
     // HTML form for image upload
     private static String getHtmlForm() {
-        return """
+        return '''
 <html>
 <head>
     <title>Image Upload</title>
@@ -494,8 +494,7 @@ public class ImageServer {
         </center>
     </div>
 </body>
-</html>
-               """;
+</html> ''';
     }
 }
 """
